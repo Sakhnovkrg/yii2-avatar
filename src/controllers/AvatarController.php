@@ -123,6 +123,8 @@ class AvatarController extends \yii\web\Controller
             'mimeTypes' => $module->mimeTypes,
             'maxWidth' => 3000,
             'maxHeight' => 3000,
+            'minWidth' => 250,
+            'minHeight' => 250,
             'skipOnEmpty' => true,
         ]);
         if ($validator->validate($image, $error)) {
